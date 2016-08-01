@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<aiml>
+
+  <category>
+    <pattern>MUSE:HMM</pattern>
+
+    <template>
+      <random>
+        <li>hmm</li>
+        <li>hmm...</li>
+        <li>hmm, let's see...</li>
+        <li>hmmmm</li>
+        <li>mmhmm</li>
+        <li>mm-hmm</li>
+        <li>+ hmm</li>
+      </random>
+    </template>
+  </category>
+
+
+  <category>
+    <pattern>MUSE:AHEM</pattern>
+
+    <template>
+      <random>
+        <li>ahem</li>
+        <li>ah.. hmm...</li>
+        <li>a.. hmm, let's see...</li>
+        <li>a... hmm</li>
+        <li>mmhmm</li>
+        <li>ah, hmm</li>
+      </random>
+    </template>
+  </category>
+</aiml>

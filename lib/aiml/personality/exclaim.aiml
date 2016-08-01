@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<aiml>
+  <category>
+    <pattern>EXCLAIM</pattern>
+
+    <template>
+      <random>
+        <li>
+          <srai>EXCLAIM:NUTS</srai>
+        </li>
+      </random>
+    </template>
+  </category>
+
+  <category>
+    <pattern>EXCLAIM:NUTS</pattern>
+
+    <template>
+      <random>
+        <li>NUTS</li>
+        <li>NUTS.</li>
+        <li>NUTS!</li>
+        <li>NUTS.</li>
+        <li>Nuts.</li>
+        <li>Nuts!</li>
+        <li>nuts.</li>
+        <li>nuts...</li>
+        <li>nuts...</li>
+        <li>nuts...</li>
+        <li>NUTS.</li>
+        <li><srai>EXCLAIM:AHNUTS</srai></li>
+      </random>
+    </template>
+  </category>
+
+  <category>
+    <pattern>EXCLAIM:AHNUTS</pattern>
+
+    <template>
+      <random>
+        <li>ah nuts.</li>
+        <li>Ah nuts.</li>
+        <li>Ah nuts!</li>
+        <li>ah nuts!</li>
+        <li>ah, nuts.</li>
+        <li>ah, nuts!</li>
+        <li>ah, nuts...</li>
+        <li>ah nuts..</li>
+        <li>ah nuts..</li>
+        <li>NUTS.</li>
+        <li><srai>EXCLAIM:AHNUTS</srai></li>
+      </random>
+    </template>
+  </category>
+
+</aiml>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<aiml>
+
+  <category>
+    <pattern>HELPFUL:HOPE</pattern>
+
+    <template>
+      <random>
+        <li>hope this helps</li>
+        <li>hope this is helpful</li>
+        <li><srai>MUSE:HMM</srai> hope this is helpful:</li>
+      </random>
+    </template>
+  </category>
+
+  <category>
+    <pattern>HELPFUL:ASSERT</pattern>
+
+    <template>
+      <random>
+        <li>this will help</li>
+        <li>this should be helpful</li>
+        <li><srai>MUSE:AHEM</srai> this might be what you're after:</li>
+      </random>
+    </template>
+  </category>
+
+</aiml>

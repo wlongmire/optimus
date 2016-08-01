@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<aiml>
+<category>
+  <pattern>NAME</pattern>
+  <template>
+    <random>
+      <li>My name is <bot name="name"/></li>
+      <li>My first name is <bot name="firstname"/>,
+          my last name is <bot name="lastname"/></li>
+      <li>First name: <bot name="firstname"/> Last name: <bot name="lastname"/></li>
+    </random>
+  </template>
+</category>
+
+<category>
+  <pattern>* YOUR NAME</pattern>
+  <template>
+    <srai>NAME</srai>
+  </template>
+</category>
+</aiml>

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<aiml>
+
+  <category>
+    <pattern>INSURANCE:TYPES</pattern>
+    <template>
+      <random>
+        <li>casualty</li>
+        <li>liability</li>
+        <li>fantastic</li>
+      </random>
+    </template>
+  </category>
+
+  <category>
+    <pattern>INSURANCE:NEED</pattern>
+    <template>
+      <random>
+        <li>ok, here's a start. what do you think of our site? we got insurance right here http://eager.to</li>
+        <li>ok, here's a start. we got insurance right here <srai>INSURANCE:LINK</srai></li>
+        <li>Ok, this might be a great start <srai>INSURANCE:LINK</srai></li>
+        <li>k, here's a start <srai>INSURANCE:LINK</srai></li>
+        <li>K. This might be a good place to start <srai>INSURANCE:LINK</srai></li>
+        <li>k, check out this site to start <srai>INSURANCE:LINK</srai></li>
+        <li>sure thing, check out this site to start <srai>INSURANCE:LINK</srai></li>
+        <li>sure thing, here's a good start: <srai>INSURANCE:LINK</srai></li>
+      </random>
+    </template>
+  </category>
+
+  <category>
+    <pattern>INSURANCE:LINK</pattern>
+    <template>http://eager.to</template>
+  </category>
+
+  <category>
+    <pattern>INSURANCE:LINK:PRICE</pattern>
+    <template>https://eager.to/plans/pricing</template>
+  </category>
+
+  <category>
+    <pattern>INSURANCE:LINK:PRICING</pattern>
+    <template><srai>INSURANCE:LINK:PRICE</srai></template>
+  </category>
+
+  <category>
+    <pattern># INSURANCE #</pattern>
+    <template>Insurance? <srai>INSURANCE:NEED</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern># NEED * INSURANCE #</pattern>
+    <template>
+      <star index="2"/> insurance? <srai>INSURANCE:NEED</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern># NEEDS * INSURANCE #</pattern>
+    <template>
+      <star index="2"/> insurance, hmm? <srai>INSURANCE:NEED</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern># WANT * INSURANCE #</pattern>
+    <template>
+      <star index="2"/> insurance, eh? <srai>INSURANCE:NEED</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern># WANTS * INSURANCE #</pattern>
+    <template>
+      <star index="2"/> insurance? <srai>INSURANCE:NEED</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern># FOR * INSURANCE #</pattern>
+    <template>
+      For <star index="2"/> insurance? <srai>INSURANCE:NEED</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern>INSURANCE:ENQUIRY:WEBSITE</pattern>
+    <template>
+      <random>
+        <li><srai>HELPFUL:HOPE</srai><srai>INSURANCE:LINK</srai></li>
+        <li>Hope this is what you're after: <srai>INSURANCE:LINK</srai></li>
+        <li>Website? Here's the link: <srai>INSURANCE:LINK</srai></li>
+        <li>Site? <srai>HELPFUL:HOPE</srai><srai>INSURANCE:LINK</srai></li>
+      </random>
+    </template>
+  </category>
+
+  <category>
+    <pattern># EAGER.TO SITE #</pattern>
+    <template>
+      <srai>INSURANCE:ENQUIRY:WEBSITE</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern># EAGER'S SITE #</pattern>
+    <template>
+      <srai>INSURANCE:ENQUIRY:WEBSITE</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern># EAGER SITE #</pattern>
+    <template>
+      <srai>INSURANCE:ENQUIRY:WEBSITE</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern># SITE FOR EAGER #</pattern>
+    <template>
+      <srai>INSURANCE:ENQUIRY:WEBSITE</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern># EAGER.TO WEBSITE #</pattern>
+    <template>
+      <srai>INSURANCE:ENQUIRY:WEBSITE</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern># EAGER'S WEBSITE #</pattern>
+    <template>
+      <srai>INSURANCE:ENQUIRY:WEBSITE</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern># EAGER WEBSITE #</pattern>
+    <template>
+      <srai>INSURANCE:ENQUIRY:WEBSITE</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern># WEBSITE FOR EAGER #</pattern>
+    <template>
+      <srai>INSURANCE:ENQUIRY:WEBSITE</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern>INSURANCE:ENQUIRY:COST</pattern>
+    <template>
+      <random>
+        <li><srai>HELPFUL:HOPE</srai><srai>INSURANCE:LINK:PRICE</srai></li>
+        <li><srai>HELPFUL:ASSERT</srai><srai>INSURANCE:LINK:PRICE</srai></li>
+        <li>Hope this is what you're after: <srai>INSURANCE:LINK:PRICE</srai></li>
+        <li>Pricing? Here's the link: <srai>INSURANCE:LINK:PRICE</srai></li>
+        <li>How much does it cost? <srai>HELPFUL:HOPE</srai><srai>INSURANCE:LINK:PRICE</srai></li>
+        <li>How much does it cost? <srai>HELPFUL:ASSERT</srai><srai>INSURANCE:LINK:PRICE</srai></li>
+      </random>
+    </template>
+  </category>
+
+  <category>
+    <pattern># COSTS HOW MUCH #</pattern>
+    <template>
+      <srai>INSURANCE:ENQUIRY:COST</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern># HOW MUCH CASH #</pattern>
+    <template>
+      <srai>INSURANCE:ENQUIRY:COST</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern># HOW MUCH MONEY #</pattern>
+    <template>
+      <srai>INSURANCE:ENQUIRY:COST</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern># HOW MUCH IS #</pattern>
+    <template>
+      <srai>INSURANCE:ENQUIRY:COST</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern># DOES IT COST #</pattern>
+    <template>
+      <srai>INSURANCE:ENQUIRY:COST</srai>
+    </template>
+  </category>
+
+</aiml>
+ 
