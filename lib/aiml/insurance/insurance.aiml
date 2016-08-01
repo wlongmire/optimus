@@ -17,14 +17,13 @@
     <pattern>INSURANCE:NEED</pattern>
     <template>
       <random>
-        <li>ok, here's a start. what do you think of our site? we got insurance right here http://eager.to</li>
-        <li>ok, here's a start. we got insurance right here <srai>INSURANCE:LINK</srai></li>
-        <li>Ok, this might be a great start <srai>INSURANCE:LINK</srai></li>
-        <li>k, here's a start <srai>INSURANCE:LINK</srai></li>
-        <li>K. This might be a good place to start <srai>INSURANCE:LINK</srai></li>
-        <li>k, check out this site to start <srai>INSURANCE:LINK</srai></li>
-        <li>sure thing, check out this site to start <srai>INSURANCE:LINK</srai></li>
-        <li>sure thing, here's a good start: <srai>INSURANCE:LINK</srai></li>
+        <li><srai>ACCOMMODATE:OKSTART</srai>. We have insurance right here <srai>INSURANCE:LINK</srai></li>
+
+        <li><srai>ACCOMMODATE:OKHERE</srai>. <srai>INSURANCE:LINK</srai></li>
+
+        <li><srai>ACCOMMODATE:OK</srai> <srai>HELPFUL:HOPE</srai> <srai>INSURANCE:LINK</srai></li>
+
+        <li><srai>ACCOMMODATE:OK</srai> <srai>HELPFUL:ASSERT</srai> <srai>INSURANCE:LINK</srai></li>
       </random>
     </template>
   </category>
@@ -141,6 +140,20 @@
 
   <category>
     <pattern># EAGER WEBSITE #</pattern>
+    <template>
+      <srai>INSURANCE:ENQUIRY:WEBSITE</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern># WHAT'S YOUR WEBSITE #</pattern>
+    <template>
+      <srai>INSURANCE:ENQUIRY:WEBSITE</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern># WHAT'S YOUR SITE #</pattern>
     <template>
       <srai>INSURANCE:ENQUIRY:WEBSITE</srai>
     </template>

@@ -6,9 +6,8 @@
 
     <template>
       <random>
-        <li>
-          <srai>EXCLAIM:NUTS</srai>
-        </li>
+        <li><srai>EXCLAIM:NUTS</srai></li>
+        <li><srai>EXCLAIM:AHNUTS</srai></li>
       </random>
     </template>
   </category>

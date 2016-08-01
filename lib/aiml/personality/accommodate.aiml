@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<aiml>
+
+  <category>
+    <pattern>ACCOMMODATE</pattern>
+
+    <template>
+      <random>
+        <li><srai>ACCOMMODATE:OK</srai></li>
+        <li><srai>ACCOMMODATE:OKSURE</srai></li>
+      </random>
+    </template>
+  </category>
+
+  <category>
+    <pattern>ACCOMMODATE:OK</pattern>
+
+    <template>
+      <random>
+        <li>OK</li>
+        <li>ok</li>
+        <li>okay</li>
+        <li>oki doke</li>
+        <li>k</li>
+        <li>K</li>
+      </random>
+    </template>
+  </category>
+
+  <category>
+    <pattern>ACCOMMODATE:OKSURE</pattern>
+
+    <template>
+      <random>
+        <li><srai>ACCOMMODATE:OK</srai> sure</li>
+        <li><srai>ACCOMMODATE:OK</srai> sure thing</li>
+      </random>
+    </template>
+  </category>
+
+  <category>
+    <pattern>ACCOMMODATE:OKHERE</pattern>
+
+    <template>
+      <random>
+        <li><srai>ACCOMMODATE:OK</srai> here's a start</li>
+        <li><srai>ACCOMMODATE:OK</srai> here you go</li>
+      </random>
+    </template>
+  </category>
+
+  <category>
+    <pattern>ACCOMMODATE:OKSTART</pattern>
+
+    <template>
+      <random>
+        <li><srai>ACCOMMODATE:OK</srai> <srai>ACCOMMODATE:START</srai></li>
+      </random>
+    </template>
+  </category>
+
+  <category>
+    <pattern>ACCOMMODATE:START</pattern>
+
+    <template>
+      <random>
+        <li>here's a start</li>
+        <li>this may be a good place to start</li>
+        <li>here's a starting point</li>
+      </random>
+    </template>
+  </category>
+
+</aiml>
