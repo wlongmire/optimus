@@ -14,9 +14,30 @@
 </category>
 
 <category>
-  <pattern>* YOUR NAME</pattern>
+  <pattern># YOUR NAME</pattern>
   <template>
     <srai>NAME</srai>
+  </template>
+</category>
+
+<category>
+  <pattern># WHO ARE YOU #</pattern>
+  <template>
+    <srai>NAME</srai> I'm a bot. The newest member of Team Argo.
+  </template>
+</category>
+
+<category>
+  <pattern># YOUR NAME MEAN #</pattern>
+  <template>
+    I'm named after the ship builder Argus, who designed the famous ship, The Argo, which the argonauts sailed in.
+  </template>
+</category>
+
+<category>
+  <pattern># YOUR NAME MEAN #</pattern>
+  <template>
+    I'm named after the ship builder Argus, who designed the famous ship, The Argo, which the argonauts sailed in.
   </template>
 </category>
 </aiml>

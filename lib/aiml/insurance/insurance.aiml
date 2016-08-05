@@ -19,7 +19,7 @@
       <random>
         <li><srai>ACCOMMODATE:OKSTART</srai>. We have insurance right here <srai>INSURANCE:LINK</srai></li>
 
-        <li><srai>ACCOMMODATE:OKHERE</srai>. <srai>INSURANCE:LINK</srai></li>
+        <li><srai>ACCOMMODATE:OKHERE</srai> <srai>INSURANCE:LINK</srai></li>
 
         <li><srai>ACCOMMODATE:OK</srai> <srai>HELPFUL:HOPE</srai> <srai>INSURANCE:LINK</srai></li>
 
@@ -30,7 +30,7 @@
 
   <category>
     <pattern>INSURANCE:LINK</pattern>
-    <template>http://eager.to</template>
+    <template>https://eager.to/plans/find-a-plan</template>
   </category>
 
   <category>
@@ -170,12 +170,12 @@
     <pattern>INSURANCE:ENQUIRY:COST</pattern>
     <template>
       <random>
-        <li><srai>HELPFUL:HOPE</srai><srai>INSURANCE:LINK:PRICE</srai></li>
-        <li><srai>HELPFUL:ASSERT</srai><srai>INSURANCE:LINK:PRICE</srai></li>
-        <li>Hope this is what you're after: <srai>INSURANCE:LINK:PRICE</srai></li>
-        <li>Pricing? Here's the link: <srai>INSURANCE:LINK:PRICE</srai></li>
-        <li>How much does it cost? <srai>HELPFUL:HOPE</srai><srai>INSURANCE:LINK:PRICE</srai></li>
-        <li>How much does it cost? <srai>HELPFUL:ASSERT</srai><srai>INSURANCE:LINK:PRICE</srai></li>
+        <li><srai>HELPFUL:HOPE</srai>. Plans begin just over $8 per month.<srai>INSURANCE:LINK:PRICE</srai></li>
+        <li><srai>HELPFUL:ASSERT</srai>. Plans begin just over $8 per month.<srai>INSURANCE:LINK:PRICE</srai></li>
+        <li>Looks like just over $8 per month. Hope this is what you're after: <srai>INSURANCE:LINK:PRICE</srai></li>
+        <li>Pricing? Looks like just over $8 per month. Here's the link if you'd like to read more <srai>INSURANCE:LINK:PRICE</srai></li>
+        <li>How much does it cost? Just over $8 per month. <srai>HELPFUL:HOPE</srai><srai>INSURANCE:LINK:PRICE</srai></li>
+        <li>How much does it cost? A little more than $8 per month. <srai>HELPFUL:ASSERT</srai><srai>INSURANCE:LINK:PRICE</srai></li>
       </random>
     </template>
   </category>
