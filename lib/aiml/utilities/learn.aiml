@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<aiml>
+  <category>
+    <pattern>^ $ABC</pattern>
+  
+    <template>
+      1
+    </template>
+  </category>  
+
+  <category>
+    <pattern>DO YOU KNOW $ABC</pattern>
+
+    <template>
+      2
+    </template>
+  </category>
+
+  <category>
+    <pattern>DO YOU $ABC YO</pattern>
+
+    <template>
+      3
+    </template>
+  </category>
+
+  <category>
+    <pattern>$ABC</pattern>
+  
+    <template>
+      4
+    </template>
+  </category>
+
+  <category>
+    <pattern>ABC</pattern>
+  
+    <template>
+      5
+    </template>
+  </category>
+</aiml>
