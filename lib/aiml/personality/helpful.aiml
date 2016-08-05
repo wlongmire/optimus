@@ -3,25 +3,25 @@
 <aiml>
 
   <category>
-    <pattern>HELPFUL:HOPE</pattern>
+    <pattern>HELPFULHOPE</pattern>
 
     <template>
       <random>
-        <li>hope this helps</li>
-        <li>hope this is helpful</li>
-        <li><srai>MUSE:HMM</srai> hope this is helpful:</li>
+        <li>sure, hope this helps,</li>
+        <li>hope this is helpful...</li>
+        <li><srai>MUSEHMM</srai> hope this is helpful...</li>
       </random>
     </template>
   </category>
 
   <category>
-    <pattern>HELPFUL:ASSERT</pattern>
+    <pattern>HELPFULASSERT</pattern>
 
     <template>
       <random>
-        <li>this will help</li>
-        <li>this should be helpful</li>
-        <li><srai>MUSE:AHEM</srai> this should be what you're after:</li>
+        <li>this will help,</li>
+        <li>this should be helpful...</li>
+        <li><srai>MUSEAHEM</srai> this should be what you're after...</li>
       </random>
     </template>
   </category>

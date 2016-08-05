@@ -3,7 +3,7 @@
 <aiml>
 
   <category>
-    <pattern>MUSE:HMM</pattern>
+    <pattern>MUSEHMM</pattern>
 
     <template>
       <random>
@@ -20,7 +20,7 @@
 
 
   <category>
-    <pattern>MUSE:AHEM</pattern>
+    <pattern>MUSEAHEM</pattern>
 
     <template>
       <random>

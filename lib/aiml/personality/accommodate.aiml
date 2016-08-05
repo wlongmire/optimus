@@ -7,14 +7,14 @@
 
     <template>
       <random>
-        <li><srai>ACCOMMODATE:OK</srai></li>
-        <li><srai>ACCOMMODATE:OKSURE</srai></li>
+        <li><srai>ACCOMMODATEOK</srai></li>
+        <li><srai>ACCOMMODATEOKSURE</srai></li>
       </random>
     </template>
   </category>
 
   <category>
-    <pattern>ACCOMMODATE:OK</pattern>
+    <pattern>ACCOMMODATEOK</pattern>
 
     <template>
       <random>
@@ -29,39 +29,39 @@
   </category>
 
   <category>
-    <pattern>ACCOMMODATE:OKSURE</pattern>
+    <pattern>ACCOMMODATEOKSURE</pattern>
 
     <template>
       <random>
-        <li><srai>ACCOMMODATE:OK</srai> sure</li>
-        <li><srai>ACCOMMODATE:OK</srai> sure thing</li>
+        <li><srai>ACCOMMODATEOK</srai> sure</li>
+        <li><srai>ACCOMMODATEOK</srai> sure thing</li>
       </random>
     </template>
   </category>
 
   <category>
-    <pattern>ACCOMMODATE:OKHERE</pattern>
+    <pattern>ACCOMMODATEOKHERE</pattern>
 
     <template>
       <random>
-        <li><srai>ACCOMMODATE:OK</srai> here's a start</li>
-        <li><srai>ACCOMMODATE:OK</srai> here you go</li>
+        <li><srai>ACCOMMODATEOK</srai> here's a start</li>
+        <li><srai>ACCOMMODATEOK</srai> here you go</li>
       </random>
     </template>
   </category>
 
   <category>
-    <pattern>ACCOMMODATE:OKSTART</pattern>
+    <pattern>ACCOMMODATEOKSTART</pattern>
 
     <template>
       <random>
-        <li><srai>ACCOMMODATE:OK</srai> <srai>ACCOMMODATE:START</srai></li>
+        <li><srai>ACCOMMODATEOK</srai> <srai>ACCOMMODATESTART</srai></li>
       </random>
     </template>
   </category>
 
   <category>
-    <pattern>ACCOMMODATE:START</pattern>
+    <pattern>ACCOMMODATESTART</pattern>
 
     <template>
       <random>
