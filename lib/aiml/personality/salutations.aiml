@@ -234,6 +234,9 @@
 <category><pattern>OLA</pattern>
 <template><srai>hello</srai></template>
 </category>
+<category><pattern>HOLA</pattern>
+<template><srai>hello</srai></template>
+</category>
 <category><pattern>HOW IS EVERYONE *</pattern>
 <template>We are all fine as far as I know.</template>
 </category>

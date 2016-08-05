@@ -140,6 +140,13 @@
   </category>
 
   <category>
+    <pattern># HOW MUCH ARE #</pattern>
+    <template>
+      <srai>INSURANCEENQUIRYCOST</srai>
+    </template>
+  </category>
+
+  <category>
     <pattern># DOES IT COST #</pattern>
     <template>
       <srai>INSURANCEENQUIRYCOST</srai>
