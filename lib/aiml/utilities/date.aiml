@@ -27,14 +27,20 @@
 </category>
 
 <category>
-  <pattern># WHAT DAY IS IT #</pattern>
-  <template><srai>DAY</srai>
+  <pattern># THE DATE #</pattern>
+  <template><srai>DATE</srai>
   </template>
 </category>
 
 <category>
-  <pattern># THE DATE #</pattern>
-  <template><srai>DATE</srai>
+  <pattern># WHAT DAY IS IT TOMORROW</pattern>
+  <template><srai>TOMORROW</srai>
+  </template>
+</category>
+
+<category>
+  <pattern># WHAT DAY IS IT</pattern>
+  <template><srai>DAY</srai>
   </template>
 </category>
 
@@ -46,7 +52,8 @@
 
 <category>
   <pattern># DAYS UNTIL CHRISTMAS #</pattern>
-  <template><srai>DAYS UNTIL CHRISTMAS</srai>
+  <template>
+    <srai>DAYSUNTILCHRISTMAS</srai>
   </template>
 </category>
 
@@ -117,7 +124,7 @@
 <category><pattern>DATE AND TIME</pattern>
 <template>The date and time is <date/></template>
 </category>
-<category><pattern>DAYS UNTIL CHRISTMAS</pattern>
+<category><pattern>DAYSUNTILCHRISTMAS</pattern>
 <template><interval format="%B %d" jformat="MMMMMMMMM dd">
 <style>days</style>
 <from><date format="%B %d" jformat="MMMMMMMMM dd"/></from>
