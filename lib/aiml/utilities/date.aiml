@@ -20,6 +20,36 @@
 <!--  http://www.alicebot.org -->
 <!--  -->
 
+<category>
+  <pattern># WHAT SEASON #</pattern>
+  <template><srai>SEASON</srai>
+  </template>
+</category>
+
+<category>
+  <pattern># WHAT DAY IS IT #</pattern>
+  <template><srai>DAY</srai>
+  </template>
+</category>
+
+<category>
+  <pattern># THE DATE #</pattern>
+  <template><srai>DATE</srai>
+  </template>
+</category>
+
+<category>
+  <pattern># THE DAY AFTER TOMORROW #</pattern>
+  <template><srai>DAY AFTER TOMORROW</srai>
+  </template>
+</category>
+
+<category>
+  <pattern># DAYS UNTIL CHRISTMAS #</pattern>
+  <template><srai>DAYS UNTIL CHRISTMAS</srai>
+  </template>
+</category>
+
 <category><pattern>SEASON</pattern>
 <template><think><set var="month"><date format="%B" jformat="MMMMMMMMM"/></set>
 </think>
