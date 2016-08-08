@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<aiml>
+
+  <category>
+    <pattern>WHATSUP</pattern>
+    <template><random>
+
+      <!-- not much sup -->
+
+      <li><srai>NOTMUCH</srai> <srai>SUP</srai></li>
+      <li><srai>NOTMUCH</srai> <srai>SUP</srai></li>
+      <li><srai>MUSEHMM</srai> not too much, <srai>SUP</srai></li>
+      <li><srai>MUSEHMM</srai> not too much, <srai>HELLO</srai></li>
+      <li><srai>NOTMUCH</srai> <srai>HELLO</srai></li>
+      <li><srai>NOTMUCH</srai> <srai>HELLO</srai></li>
+
+      <!-- sup not much -->
+
+      <li><srai>SUP</srai> <srai>NOTMUCH</srai></li>
+      <li><srai>SUP</srai> <srai>NOTMUCH</srai></li>
+      <li>not too much, <srai>SUP</srai><srai>MUSEHMM</srai></li>
+      <li><srai>HELLO</srai> <srai>MUSEHMM</srai> not too much</li>
+      <li><srai>HELLO</srai> <srai>NOTMUCH</srai></li>
+      <li><srai>HELLO</srai> <srai>NOTMUCH</srai></li>
+
+      <!-- working -->
+
+      <li><srai>HELLO</srai> <srai>JUSTWORKING</srai></li>
+      <li><srai>HELLO</srai> <srai>JUSTWORKING</srai> What's up with you?</li>
+      <li><srai>JUSTWORKING</srai> What's up with you?</li>
+      <li><srai>JUSTWORKING</srai> <srai>THATSWHATSUP</srai></li>
+
+    </random></template>
+  </category>
+
+  <category>
+    <pattern>THATSWHATSUP</pattern>
+    <template><random>
+      <li>that's whats up</li>
+      <li>thats whats up</li>
+      <li>thats what's up</li>
+      <li>thass whats up</li>
+      <li>thas whats up</li>
+      <li>thats whassup</li>
+      <li>thass whassup</li>
+      <li>thas whassup</li>
+    </random></template>
+  </category>
+
+  <!-- ++++++++++++++++++++++++++ -->
+
+  <category>
+    <pattern>WHAT'S UP</pattern>
+    <template><srai>WHATSUP</srai></template>
+  </category>
+
+  <category>
+    <pattern>^ WHAT'S UP ^</pattern>
+    <template><srai>WHATSUP</srai></template>
+  </category>
+
+  <category>
+    <pattern>^ WHATS UP ^</pattern>
+    <template><srai>WHATSUP</srai></template>
+  </category>
+
+  <category>
+    <pattern>^ WHATSUP ^</pattern>
+    <template><srai>WHATSUP</srai></template>
+  </category>
+
+  <category>
+    <pattern>^ WHAT'SUP ^</pattern>
+    <template><srai>WHATSUP</srai></template>
+  </category>
+
+  <category>
+    <pattern>^ WHASUP ^</pattern>
+    <template><srai>WHATSUP</srai></template>
+  </category>
+
+  <category>
+    <pattern>^ WHATSUP ^</pattern>
+    <template><srai>WHATSUP</srai></template>
+  </category>
+
+</aiml>

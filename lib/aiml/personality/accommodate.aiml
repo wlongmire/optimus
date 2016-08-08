@@ -16,16 +16,7 @@
   <category>
     <pattern>ACCOMMODATEOK</pattern>
 
-    <template>
-      <random>
-        <li>OK</li>
-        <li>ok</li>
-        <li>okay</li>
-        <li>oki doke</li>
-        <li>k</li>
-        <li>K</li>
-      </random>
-    </template>
+    <template><srai>OK</srai></template>
   </category>
 
   <category>

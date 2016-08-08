@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<aiml>
+
+  <category>
+    <pattern>JUSTWORKING</pattern>
+
+    <template>
+      <random>
+        <li>just <srai>WORKINGVARIANT</srai><srai>PUNCRANDOMEND</srai></li>
+        <li>just doing some work<srai>PUNCRANDOMEND</srai></li>
+        <li><srai>WORKINGVARIANT</srai> for <bot><name>botmaster</name></bot></li>
+        <li>just <srai>WORKINGVARIANT</srai> for <bot><name>botmaster</name></bot></li>
+        <li>just doing some work for <bot><name>botmaster</name></bot></li>
+        <li>work work work, work work work</li>
+        <li><srai>EMOJIMUSIC</srai> work work work, work work work</li>
+      </random>
+    </template>
+  </category>
+
+  <category>
+    <pattern>WORKINGVARIANT</pattern>
+
+    <template>
+      <random>
+        <li>working</li>
+        <li>workin</li>
+        <li>workin'</li>
+      </random>
+    </template>
+  </category>
+
+</aiml>

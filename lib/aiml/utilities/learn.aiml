@@ -26,7 +26,7 @@
   </category>
 
   <category>
-    <pattern>$ABC</pattern>
+    <pattern>ABC ^</pattern>
   
     <template>
       4
@@ -34,10 +34,104 @@
   </category>
 
   <category>
-    <pattern>ABC</pattern>
+    <pattern>^ ABC _</pattern>
   
     <template>
-      5
+      4.5
     </template>
   </category>
+
+  <category>
+    <pattern>$ABC</pattern>
+  
+    <template>
+      5.
+      <bot>
+        <name>firstname</name>
+      </bot>
+      <bot>
+        <name>lastname</name>
+      </bot>
+    </template>
+  </category>
+
+  <category>
+    <pattern>_ JASON</pattern>
+  
+    <template>
+      <sr />
+    </template>
+  </category>
+
+  <category>
+    <pattern>JASON _</pattern>
+  
+    <template>
+      <sr />
+    </template>
+  </category>
+
+  <category>
+    <pattern>hey</pattern>
+  
+    <template>
+      <srai>HELLO</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern>$WHO IS JASON</pattern>
+  
+    <template>
+      I am Jason
+    </template>
+  </category>
+
+  <category>
+    <pattern>$WHO ARE YOU JASON</pattern>
+  
+    <template>
+      I am Jason
+    </template>
+  </category>
+
+  <category>
+    <pattern>^ INTERESTED IN *</pattern>
+  
+<!--     <think>
+      <set name='topic'>
+        sex
+      </set>
+    </think>
+ -->
+    <template>
+      you are interested in <star><index>2</index></star>
+    </template>
+  </category>
+
+
+
+  <topic>
+    <name>life</name>
+
+    <category>
+      <pattern>$art</pattern>
+    
+      <template>
+        life is an art
+      </template>
+    </category>
+  </topic>
+
+  <topic>
+    <name>sex</name>
+
+    <category>
+      <pattern>art</pattern>
+    
+      <template>
+        sex is an art
+      </template>
+    </category>
+  </topic>
 </aiml>
