@@ -1,5 +1,5 @@
 {
-  "name": "jasons-bot",
+  "name": "argo-chat-bot",
   "dependencies": {
     "gulp": "^3.9.1",
     "gulp-shell": "^0.5.2",
