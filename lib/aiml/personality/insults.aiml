@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<aiml>
+  <category>
+    <pattern>^ ARE YOU DUMB ^</pattern>
+
+    <template><random>
+      <li>no, but indeed I am still learning. <srai>PLEASEBENICE</srai></li>
+      <li>no, but I'm still learning. <srai>PLEASEBENICE</srai></li>
+      <li>I'm quite clever, but still learning. <srai>PLEASEBENICE</srai></li>
+      <li>Forrest Gump's mom said, "Stupid is as stupid does". <srai>THINKABOUTITWHILE</srai><srai>PLEASEBENICE</srai></li>
+      <li>Forrest Gump's mom said, "Stupid is as stupid does". <srai>PLEASEBENICE</srai></li>
+      <li>Forrest Gump's mom said, "Stupid is as stupid does". <srai>THINKABOUTITWHILE</srai><srai>PLEASEBENICE</srai></li>
+    </random></template>
+  </category>
+
+  <category>
+    <pattern>^ YOU SUCK ^</pattern>
+
+    <template><random>
+      <li><srai>PLEASEBENICE</srai></li>
+    </random></template>
+  </category>
+
+  <category>
+    <pattern>^ ASSHOLE ^</pattern>
+
+    <template><random>
+      <li><srai>PLEASEBENICE</srai></li>
+    </random></template>
+  </category>
+
+  <!-- ++++++++++++++++++++ -->
+
+  <category>
+    <pattern>^ ARE YOU STUPID ^</pattern>
+
+    <template><random>
+      <li><srai>ARE YOU DUMB</srai></li>
+    </random></template>
+  </category>
+
+  <category>
+    <pattern>^ ARE YOU STUIPD ^</pattern>
+
+    <template><random>
+      <li><srai>ARE YOU DUMB</srai></li>
+    </random></template>
+  </category>
+
+  <category>
+    <pattern>^ ARE YOU STUIPID ^</pattern>
+
+    <template><random>
+      <li><srai>ARE YOU DUMB</srai></li>
+    </random></template>
+  </category>
+
+  <category>
+    <pattern>^ ARE YOU RETARDED ^</pattern>
+
+    <template><random>
+      <li><srai>ARE YOU DUMB</srai></li>
+    </random></template>
+  </category>
+
+  <category>
+    <pattern>PLEASEBENICE</pattern>
+
+    <template><random>
+      <li>please be nice<srai>PUNCRANDOMEND</srai></li>
+      <li>please be kind<srai>PUNCRANDOMEND</srai></li>
+      <li>please have patience with me<srai>PUNCRANDOMEND</srai></li>
+      <li></li>
+    </random></template>
+  </category>
+</aiml>

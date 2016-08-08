@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<aiml>
+
+  <category>
+    <pattern>OK</pattern>
+    <template><random>
+      <li>k</li>
+      <li>ok</li>
+      <li>okay</li>
+      <li>oki doke</li>
+      <li>k</li>
+      <li>kay</li>
+    </random></template>
+  </category>
+
+</aiml>

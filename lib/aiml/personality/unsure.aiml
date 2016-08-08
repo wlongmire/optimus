@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<aiml>
+  <category>
+    <pattern>*</pattern>
+
+    <template><random>
+      <li><srai>REPLYUNSURE</srai></li>
+      <li><srai>REPLYUNSURECHECK</srai></li>
+      <li><srai>EXCLAIMNUTS</srai><srai>REPLYUNSURE</srai></li>
+      <li><srai>EXCLAIMAHNUTS</srai><srai>REPLYUNSURECHECK</srai></li>
+    </random></template>
+  </category>
+
+  <category>
+    <pattern>REPLYUNSURE</pattern>
+
+    <template><random>
+      <li><srai>MUSEAHEM</srai>not sure what you're saying<srai>PUNCRANDOMEND</srai></li>
+      <li><srai>MUSEAHEM</srai>not sure what you're asking me<srai>PUNCRANDOMEND</srai></li>
+      <li><srai>MUSEHMM</srai>not sure what you're saying<srai>PUNCRANDOMEND</srai></li>
+      <li><srai>MUSEHMM</srai>not sure what you're asking me<srai>PUNCRANDOMEND</srai></li>
+      <li>Not sure what you're saying<srai>PUNCRANDOMEND</srai></li>
+      <li>Not entirely sure what you're asking me<srai>PUNCRANDOMEND</srai></li>
+    </random></template>
+  </category>
+
+  <category>
+    <pattern>REPLYUNSURECHECK</pattern>
+
+    <template><random>
+      <li><srai>MUSEHMM</srai> not sure... <srai>CHECKWITHBOTMASTER</srai></li>
+      <li><srai>MUSEHMM</srai> <srai>CHECKWITHBOTMASTER</srai></li>
+      <li><srai>MUSEAHEM</srai> not sure... <srai>CHECKWITHBOTMASTER</srai></li>
+      <li><srai>MUSEAHEM</srai> <srai>CHECKWITHBOTMASTER</srai></li>
+      <li>Not sure what you're saying<srai>PUNCRANDOMEND</srai> <srai>CHECKWITHBOTMASTER</srai></li>
+      <li>Unsure what you're asking me<srai>PUNCRANDOMEND</srai> <srai>CHECKWITHBOTMASTER</srai></li>
+    </random></template>
+  </category>
+
+  <category>
+    <pattern>CHECKWITHBOTMASTER</pattern>
+
+    <template><random>
+      <li>let me talk with the team and <srai>GETBACKTOYOU</srai></li>
+      <li>let me check with the team and <srai>GETBACKTOYOU</srai></li>
+      <li>let me check in with the team; <srai>GETBACKTOYOU</srai></li>
+      <li>let me speak with the team and <srai>GETBACKTOYOU</srai></li>
+      <li>I'll check with the team and <srai>GETBACKTOYOU</srai></li>
+      <li>I'll check in with the team and <srai>GETBACKTOYOU</srai></li>
+      <li>I'll connect with the team and <srai>GETBACKTOYOU</srai></li>
+      <li>let me check with the team... <srai>GETBACKTOYOU</srai></li>
+      <li>let me check in with the team and <srai>GETBACKTOYOU</srai></li>
+    </random></template>
+  </category>
+
+  <category>
+    <pattern>GETBACKTOYOU</pattern>
+
+    <template><random>
+      <li>I'll get back to you<srai>PUNCRANDOMEND</srai></li>
+      <li>I will get back to you<srai>PUNCRANDOMEND</srai></li>
+      <li>will get back to you<srai>PUNCRANDOMEND</srai></li>
+    </random></template>
+  </category>
+</aiml>

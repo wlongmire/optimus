@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<aiml>
+  <category>
+    <pattern>NOTMUCH</pattern>
+
+    <template><random>
+      <li>not much<srai>PUNCRANDOMEND</srai></li>
+      <li>not too much<srai>PUNCRANDOMEND</srai></li>
+      <li>not a whole lot<srai>PUNCRANDOMEND</srai></li>
+      <li>just chillin<srai>PUNCRANDOMEND</srai></li>
+    </random></template>
+  </category>
+</aiml>
