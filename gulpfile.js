@@ -9,6 +9,7 @@ gulp.task('watch', function () {
   return watch('lib/**/**')
     .pipe(shell([
       'pb upload <%= file.path %>',
-      'pb compile'
+      'pb compile',
+      'pwd'
     ]))
 });

@@ -692,11 +692,11 @@
     <template><srai>BYE</srai></template>
   </category>
 
-  <category>
+<!--   <category>
     <pattern>I AM GOING *</pattern>
     <template><srai>BYE</srai></template>
   </category>
-
+ -->
   <category>
     <pattern>I AM LEAVING *</pattern>
     <template><srai>BYE</srai></template>
