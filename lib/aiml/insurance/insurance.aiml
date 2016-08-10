@@ -67,11 +67,18 @@
   </category>
 
   <category>
-    <pattern># NEED # INSURANCE #</pattern>
+    <pattern># NEED _ INSURANCE #</pattern>
+    <template>
+      <srai>INSURANCENEED</srai>
+    </template>
+  </category>
+
+<!--   <category>
+    <pattern># NEED * INSURANCE #</pattern>
     <template>
       <star index="2"/> insurance? <srai>INSURANCENEED</srai>
     </template>
-  </category>
+  </category> -->
 
   <category>
     <pattern># NEEDS INSURANCE #</pattern>
@@ -152,6 +159,38 @@
       <srai>INSURANCEENQUIRYCOST</srai>
     </template>
   </category> 
+
+  <!-- For Form Demo -->
+
+  <category>
+    <pattern>^ FILL OUT THIS FORM ^</pattern>
+    <template>
+      Ok great! If you need any help with the other questions, I'm here. Let me know :)
+    </template>
+  </category>
+
+  <category>
+    <pattern>SUBMITTED MY NAME</pattern>
+    <template>
+      Hi Jason! Nice to meet you.
+    </template>
+  </category>
+
+  <category>
+    <pattern>THIS IS MY AGE</pattern>
+    <template>
+      <srai>MUSEHMM</srai>you know, if you were just a little older you'd qualify for a slightly better rate. Something to look forward to I guess
+    </template>
+  </category>
+
+  <category>
+    <pattern>K SUBMITTED THE NAME OF MY PUP</pattern>
+    <template>
+      What a nice name!
+    </template>
+  </category>
+
+
 
 </aiml>
  

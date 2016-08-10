@@ -6,20 +6,20 @@
     <pattern>WHATSUP</pattern>
     <template><random>
 
-      <!-- not much sup -->
+      <!-- not much hello -->
 
-      <li><srai>NOTMUCH</srai> <srai>SUP</srai></li>
-      <li><srai>NOTMUCH</srai> <srai>SUP</srai></li>
-      <li><srai>MUSEHMM</srai> not too much, <srai>SUP</srai></li>
+      <li><srai>NOTMUCH</srai> <srai>HELLO</srai></li>
+      <li><srai>NOTMUCH</srai> <srai>HELLO</srai></li>
+      <li><srai>MUSEHMM</srai> not too much, <srai>HELLO</srai></li>
       <li><srai>MUSEHMM</srai> not too much, <srai>HELLO</srai></li>
       <li><srai>NOTMUCH</srai> <srai>HELLO</srai></li>
       <li><srai>NOTMUCH</srai> <srai>HELLO</srai></li>
 
-      <!-- sup not much -->
+      <!-- hello not much -->
 
-      <li><srai>SUP</srai> <srai>NOTMUCH</srai></li>
-      <li><srai>SUP</srai> <srai>NOTMUCH</srai></li>
-      <li>not too much, <srai>SUP</srai><srai>MUSEHMM</srai></li>
+      <li><srai>HELLO</srai> <srai>NOTMUCH</srai></li>
+      <li><srai>HELLO</srai> <srai>NOTMUCH</srai></li>
+      <li>not too much, <srai>HELLO</srai><srai>MUSEHMM</srai></li>
       <li><srai>HELLO</srai> <srai>MUSEHMM</srai> not too much</li>
       <li><srai>HELLO</srai> <srai>NOTMUCH</srai></li>
       <li><srai>HELLO</srai> <srai>NOTMUCH</srai></li>
@@ -40,11 +40,6 @@
       <li>that's whats up</li>
       <li>thats whats up</li>
       <li>thats what's up</li>
-      <li>thass whats up</li>
-      <li>thas whats up</li>
-      <li>thats whassup</li>
-      <li>thass whassup</li>
-      <li>thas whassup</li>
     </random></template>
   </category>
 
@@ -52,6 +47,11 @@
 
   <category>
     <pattern>WHAT'S UP</pattern>
+    <template><srai>WHATSUP</srai></template>
+  </category>
+
+  <category>
+    <pattern>WHAT’S UP</pattern>
     <template><srai>WHATSUP</srai></template>
   </category>
 
