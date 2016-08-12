@@ -1,80 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <aiml>
-
-
 <!-- Eager Database -->
 
 <!-- Greetings -->
 <category>
   <pattern># HI #</pattern>
   <template>
-    <srai>Hello</srai>
+<srai>Hello</srai>
+
   </template>
 </category>
 
 <category>
   <pattern># HEY #</pattern>
   <template>
-    <srai>Hello</srai>
+
+<srai>Hello</srai>
+
   </template>
 </category>
 
 <category>
-  <pattern># YOUR NAME MEAN #</pattern>
+  <pattern>NAME</pattern>
   <template>
-    I'm named after the ship builder Argus, who designed the famous ship, The Argo, which the argonauts sailed in.
+
+<srai>Hello</srai>
+
+  </template>
+</category>
+
+<category>
+  <pattern>What</pattern>
+  <template>
+  <srai>HELLO</srai>
+  <srai>PURPOSE</srai>
   </template>
 </category>
 
 <category>
   <pattern>HELLO</pattern>
   <template>
-
 Hey I'm Argus!
+  </template>
+</category>
+
+<category>
+  <pattern>PURPOSE</pattern>
+  <template>
 Ask me anything about Eager.to your quote or liability insurance in general.
-
-  </template>
-</category>
-
-<category>
-  <pattern># WHAT DOES YOUR NAME MEAN #</pattern>
-  <template>
-    <srai>Hello</srai>
-  </template>
-</category>
-
-<category>
-  <pattern> NAME </pattern>
-  <template>
-    <srai>Hello</srai>
   </template>
 </category>
 
 <!-- Insurance Conversation Paths -->
 
+
+<!-- Insurance Questions -->
 <category>
-  <pattern># NEED # INSURANCE</pattern>
+  <pattern> Do I NEED INSURANCE</pattern>
   <template>
-    It's generally a good idea. Anything can happen, & it's better to pay for your mistakes from your policy instead of your own savings.
+
+It's generally a good idea. Anything can happen, and it's better to pay for your mistakes from your policy instead of your own savings.
+Would you like to learn about liability insurance for your field?
+
   </template>
 </category>
 
+<category>
+  <pattern> </pattern>
+  <template>
 
-My client is asking for a certificate of insurance...wtf is that
-A certificate of #insurance gives your #client info about your policy: coverage limit, insurance provider, active coverage dates, etc.
+It's generally a good idea. Anything can happen, and it's better to pay for your mistakes from your policy instead of your own savings.
 
-How do I price myself?
-We can help! First, a few questions: what do you do, and what is the scope of the project your quoting on? #pricing
-Just started freelancing, looking for work. PM me if interested!
-Looking for liability insurance - any good recs?
-Freelancers, how much do you charge for [industry] work?
-I tried to buy a policy but the button wouldn't show up.
-Why do [profession's] need liability insurance?
-I'd like to change my coverage.
-What is a statement of work?
-Can I talk to a real person?
-Got my [profession's] liability insurance.
+  </template>
+</category>
+
 <!-- Dictionary -->
 <category>
   <pattern>What does "*" mean</pattern>
@@ -133,6 +133,17 @@ Got my [profession's] liability insurance.
   </template>
 </category>
 
+<category>
+  <pattern>No</pattern>
+  <that>Would you like suggestions on topics we can talk about</that>
+  <template>
+
+Just thought I'd ask :)
+What else do you need?
+
+  </template>
+</category>
+
 <!-- Suggestions -->
 <category>
   <pattern># SUGGEST #</pattern>
@@ -163,8 +174,10 @@ Got my [profession's] liability insurance.
 <category>
   <pattern>*</pattern>
   <template>
-    Sorry. I didn't understand what you said.
-    Would you like suggestions on topics we can talk about?
+
+Sorry. I didn't understand what you said.
+Would you like suggestions on topics we can talk about?
+
   </template>
 </category>
 

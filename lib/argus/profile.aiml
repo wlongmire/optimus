@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<aiml>
+<!-- Eager Database -->
+
+<!-- Greetings -->
+<category>
+  <pattern># HELLO #</pattern>
+  <template><random>
+    <li>Hey</li>
+    <li>Hi</li>
+    <li>Hello</li>
+  </random><random>
+    <li> there.</li>
+    <li> friend.</li>
+    <li>. :)</li>
+    <li>!</li>
+  </random> <random>
+    <li><srai>Name</srai></li>
+    <li></li>
+  </random>
+
+  </template>
+</category>
+
+<category>
+  <pattern># NAME #</pattern>
+  <template><random>
+    <li>My Name is Argus.</li>
+    <li>I'm Argus.</li>
+    <li>Argus here! How can I help you?</li>
+  </random>
+  </template>
+</category>
+
+<category>
+  <pattern># PURPOSE # </pattern>
+  <template>
+I can answer many of your questions about freelancing, liability insurance and what eager.to can do for you.
+
+<random><li><srai>OFFER SUGGESTIONS</srai></li><li> </li></random>
+  </template>
+</category>
+
+<!-- Display -->
+<category>
+  <pattern># SUGGESTIONS #</pattern>
+  <template>
+
+  Some things we can talk about include:
+
+  - What insurance is.
+  - Why freelancers need it.
+  - Pricing yourself.
+  - How we develop our quotes.
+  - And definitions of any terms you may be unfamiliar with.
+
+  Ask Away!
+  </template>
+</category>
+
+<!-- Questions -->
+<category>
+  <pattern># OFFER SUGGESTIONS # </pattern>
+  <template>Would you like suggestions on topics we can talk about?</template>
+</category>
+
+
+<!-- Responses -->
+<category>
+  <pattern># YES # </pattern>
+  <that>Would you like suggestions on topics we can talk about</that>
+  <template>
+GREAT!!!
+  </template>
+</category>
+
+<!-- Error -->
+<category>
+  <pattern>*</pattern>
+  <template>
+
+Sorry. I didn't understand what you said.
+
+  </template>
+</category>
+
+</aiml>
