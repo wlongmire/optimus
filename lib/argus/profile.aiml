@@ -62,16 +62,20 @@ I can answer many of your questions about freelancing, liability insurance and w
 <!-- Questions -->
 <category>
   <pattern># OFFER SUGGESTIONS # </pattern>
-  <template>Would you like suggestions on topics we can talk about?</template>
+  <template><map name="botquestions">SUGGESTIONSQUESTION</map>?</template>
 </category>
 
 
 <!-- Responses -->
 <category>
   <pattern># YES # </pattern>
-  <that>Would you like suggestions on topics we can talk about</that>
+  <that><set>botquestions</set></that>
   <template>
-GREAT!!!
+
+  <srai>
+    <map name="botresponses"><thatstar/></map>
+  </srai>
+
   </template>
 </category>
 
@@ -79,9 +83,11 @@ GREAT!!!
 <category>
   <pattern>*</pattern>
   <template>
-
 Sorry. I didn't understand what you said.
-
+<random>
+<li><map name="botquestions">SUGGESTIONSQUESTION</map></li>
+<li> </li>
+</random>
   </template>
 </category>
 
