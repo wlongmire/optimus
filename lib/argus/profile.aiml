@@ -5,17 +5,24 @@
 
 <!-- Greetings -->
 <category>
+  <topic>Greetings</topic>
   <pattern># HELLO #</pattern>
-  <template><random>
+  <template>
+
+  <random>
     <li>Hey</li>
     <li>Hi</li>
     <li>Hello</li>
-  </random><random>
+  </random>
+
+  <random>
     <li> there.</li>
     <li> friend.</li>
     <li>. :)</li>
     <li>!</li>
-  </random> <random>
+  </random>
+
+  <random>
     <li><srai>Name</srai></li>
     <li></li>
   </random>
@@ -25,22 +32,58 @@
 
 <category>
   <pattern># NAME #</pattern>
-  <template><random>
+  <topic>Greetings</topic>
+  <template>
+  <random>
     <li>My Name is Argus.</li>
     <li>I'm Argus.</li>
     <li>Argus here! How can I help you?</li>
   </random>
+
   </template>
 </category>
 
 <category>
   <pattern># PURPOSE # </pattern>
+  <topic>Greetings</topic>
   <template>
 I can answer many of your questions about freelancing, liability insurance and what eager.to can do for you.
 
-<random><li><srai>OFFER SUGGESTIONS</srai></li><li> </li></random>
+<random><li><srai>SUGGESTIONSQUESTION</srai></li><li> </li></random>
   </template>
 </category>
+
+<category>
+  <pattern>QUESTIONPATH</pattern>
+  <template>
+    <srai>COUNTRYQUESTION</srai>
+  </template>
+</category>
+
+<category>
+  <pattern>PATHEND</pattern>
+  <template>
+    Thank you for your time!
+    What else do you need?
+  </template>
+</category>
+
+<!-- Access data -->
+<category>
+  <pattern>ASK NAME</pattern>
+  <template>
+    <get name="id"/>
+  </template>
+</category>
+
+<category>
+  <pattern>NAME *</pattern>
+  <think><set name="id"><star/></set></think>
+  <template>
+    Thanks <star/>!
+  </template>
+</category>
+
 
 <!-- Display -->
 <category>
@@ -61,34 +104,53 @@ I can answer many of your questions about freelancing, liability insurance and w
 
 <!-- Questions -->
 <category>
-  <pattern># OFFER SUGGESTIONS # </pattern>
-  <template><map name="botquestions">SUGGESTIONSQUESTION</map>?</template>
+  <pattern><set>binarykeys</set></pattern>
+  <template><map name="binarykey2question"><star/></map>?</template>
 </category>
-
 
 <!-- Responses -->
 <category>
-  <pattern># YES # </pattern>
-  <that><set>botquestions</set></that>
+  <pattern>YES</pattern>
+  <that><set>binaryquestions</set></that>
+  <think>
+    <!-- can't dynamicly set variable names for set -->
+    <!-- saving data within this path would require, I think, an external call -->
+    <set name="answer">YES></set>
+  </think>
   <template>
+    <srai>
+      <map name="binaryresponseyes">
+        <map name="binaryquestion2key"><thatstar/></map>
+      </map>
+    </srai>
+  </template>
+</category>
 
-  <srai>
-    <map name="botresponses"><thatstar/></map>
-  </srai>
-
+<category>
+  <pattern>NO</pattern>
+  <that><set>binaryquestions</set></that>
+  <template>
+    <srai>
+      <map name="binaryresponseno">
+        <map name="binaryquestion2key"><thatstar/></map>
+      </map>
+    </srai>
   </template>
 </category>
 
 <!-- Error -->
 <category>
+  <pattern>DONTUNDERSTAND</pattern>
+  <template>
+That's fine. What else can I do for you?
+  </template>
+</category>
+
+<category>
   <pattern>*</pattern>
   <template>
-Sorry. I didn't understand what you said.
-<random>
-<li><map name="botquestions">SUGGESTIONSQUESTION</map></li>
-<li> </li>
-</random>
-  </template>
+  Sorry. I didn't understand what you said.
+</template>
 </category>
 
 </aiml>

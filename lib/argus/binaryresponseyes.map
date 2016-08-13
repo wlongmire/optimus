@@ -1,0 +1,18 @@
+[
+	[
+    "SUGGESTIONSQUESTION",
+    "SUGGESTIONS"
+  ],
+  [
+    "COUNTRYQUESTION",
+    "AGEQUESTION"
+  ],
+  [
+    "AGEQUESTION",
+    "SWIMQUESTION"
+  ],
+  [
+    "SWIMQUESTION",
+    "PATHEND"
+  ]
+]

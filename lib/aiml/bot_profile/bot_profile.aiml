@@ -120,7 +120,7 @@ Got my [profession's] liability insurance.
 
 <!-- Responses -->
 <category>
-  <pattern># REPEAD THAT #</pattern>
+  <pattern># REPEAT THAT #</pattern>
   <template>
     <that />
   </template>

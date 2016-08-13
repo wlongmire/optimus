@@ -1,0 +1,18 @@
+[
+	[
+  "SUGGESTIONSQUESTION",
+  "Would you like suggestions on topics we can talk about"
+  ],
+  [
+  "COUNTRYQUESTION",
+  "Would you like to move to another country"
+  ],
+  [
+  "AGEQUESTION",
+  "Are you over the age of 22"
+  ],
+  [
+  "SWIMQUESTION",
+  "Are you a good swimmer"
+  ]
+]
